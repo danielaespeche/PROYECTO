@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+li{ list-style: none; }
+
+h1 , h2 , h3 , h4 , h5 , h6 , strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+a{
+    display: block;    
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+img{
+    display: block;
+    max-width: 100%;
+    width:100%;
+}
+form, input , select , option, textarea , button, fieldset {
+    display: block;
+    font-family: inherit;
+    color:inherit;
+    background-color: transparent;
+}
+svg{
+    display: block;
+    fill: currentColor;
+}
+:root{
+    font-size: 100%;
+
+    /* Tipografías */
+    --font-main : 'Krona One', sans-serif;
+    --font-nav: 'Lato', sans-serif , 'Nunito Sans', sans-serif;
+    
+    --size-nav: 10vw;
+    
+    /* Colores */
+    --color-black : black;
+    --color-white : #ECECEC;
+
+    /* Border y befores */
+    --border-height : 2px;
+    --border-main   : var(--border-height) solid var(--color-black); 
+}
+
+/*HEADER NAV*/
+.Header{
+    max-width:  100%;
+    min-height: 20%;
+    background-color: #74BADE;
+}
+
+.Header-wrapper{
+    width: 95%;
+/*    background-color: aqua;*/
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    padding: .9rem;
+}
+
+.Header-nav{
+    width: 90%;
+/*    background-color: dimgray;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.Nav-img{
+    width: 23%;
+}
+.Nav-ul{
+    width: 90%;
+/*    background-color: chartreuse;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+.Nav-li{
+     width: 100%;
+/*    background-color: darkmagenta;*/
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-nav);
+    color: var(--color-white);
+    font-size: 1.5vw;
+    
+}
+.Nav-li::after{
+    width: 100%;
+    color: white;
+    transform: scaleX(1)
+}
+
+.Nav-li:hover{
+    transform: scale(1.2) 
+    
+    
+}
+
+.Nav-svg{
+   width: 1.5rem;
+/*   background-color: coral;*/
+    
+display: none;
+
+}
+
+
+@media(max-width: 780px){
+    
+}
+
+@media (max-width: 30rem){
+    .Nav-li{
+        display: none;
+    }
+}
