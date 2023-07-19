@@ -8,34 +8,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <!-- hago el header y nav -->
 
-<header class="Header">
-    <div class="Header-wrapper">
-        <div class="Header-nav">
-           <img src="assets/logo-vdenergy.png" alt="VENERGY" class="Nav-img">
+    <header class="Header">
+        <div class="Header-wrapper">
+            <div class="Header-nav">
+               <img src="assets/logo-vdenergy.png" alt="VENERGY" class="Nav-img">
+                
+                <ul class="Nav-ul">
+                    <li class="Nav-li">HOME</li>
+                    <li class="Nav-li">MISIÓN</li>
+                    <li class="Nav-li">SERVICIOS</li>
+                    <li class="Nav-li">CONTACTO</li>
+                </ul>
+
+                <svg
+                 xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Nav-svg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>    
+                </svg>
+
+            </div>
+        </div>
+    </header>
+    
+<!--    Main-->
+
+    <main class="Main">
+        <div class="Main-wrapper">
+            <section class="Main-section">
+                <img src="assets/oficina.jpg" alt="placas solares" class="Main-img">
+                <img src="assets/oficina.webp" alt="placas solares" class="Mains-img">
+                <div class="Inicio-intro">
+                    <p class="First-p">Minimizamos tu coste energético</p>
+                    <h1 class="Inicio-h1">TÚ NOS IMPORTAS</h1>
+                    
+                    
+                        <!--  formulario-->
+                   
+                    <div class="Formulario-inicio" enctype="multipart/form-data" >
+                       <form action="archivo.php" method="get">
+                           <p class="Parrafo-p">Nombre</p>
+                           <input type="text"  class="Form-input"  name="Nombre"   placeholder= "Nombre y apellidos" autofocus required ><br>
+                           
+                           <p class="Parrafo-p">Teléfono</p>
+                           <input type="{0-10}"  name="telefono" class="Form-input"  placeholder="Teléfono" required pattern="{0-6}"><br>
+                           
+                           <p class="Parrafo-p">Email</p>
+                           <input type="email"  name="email" placeholder="Email" required class="Form-input"  >
+                           <br>
+                           <br>
+                           
+                           
+                           <input type="checkbox" name="acepto" id="acepto" >
+                           <label for="acepto">Acepto términos y condiciones</label>
+                           <br>
+                           <br>
+                           
+                           <input type="submit" value="Enviar" class="Input-submit">
+                       </form>
+                        
+                    </div>
+                    
+                    <button class="Formulario-button">Envíanos tu solicitud y te llamamos</button>
+                   
+                </div>    
+            </section>
             
-            <ul class="Nav-ul">
-                <li class="Nav-li">HOME</li>
-                <li class="Nav-li">MISIÓN</li>
-                <li class="Nav-li">SERVICIOS</li>
-                <li class="Nav-li">CONTACTO</li>
-            </ul>
-        
-            <svg
-             xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="Nav-svg" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>    
-            </svg>
+<!--            seccion infomativa-->
+            
+            <section class="Grid-section">
+                <article class="Grid-article">
+                   <div class="Mision-wrapper">
+                        <h2 class="Mision-h2" >Nuestra misión</h2><br>
+                        
+                        <p class="Mision-p" ><br>
+                            Desde Vdenergy, nuestra principal misión, es ayudar a nuestros clientes, tanto particulares como empresas a minimizar los costes energéticos, ya sea de su uso particular o derivados de su producción dándoles un servicio cercano, profesional y personalizado.
+                        </p>
+                   </div>
+                   
+                    <div class="Nosotros-wrapper">
+                        <h2 class= "Nosotros-h2">Nosotros</h2><br>
+                        
+                        <p class="Nosotros-p" >
+                            Proporcionamos un gran ahorro en su factura del que se benefician múltiples clientes repartidos a lo largo de todo el territorio nacional.
+                        </p>
+                    </div>
+                    
+                    <div class="Servicios-wrapper">
+                         <h2 class="Servicios-h2" >Servicios</h2><br>
+                         
+                        <p class="Servicios-p" >
+                          Estudiamos tu consumo y factura para poder ofrecerte la mejor tarifa que se adapte a tus necesidades entre todas las comercializadoras con las que colaboramos. Sin coste alguno.
+                        </p>
+                    </div>
+                    
+                </article>
+            </section>
+            
             
         </div>
-     
-       
-        
-    </div>
-</header>
+    
+    
+</main>
+
     
 </body>
 </html>

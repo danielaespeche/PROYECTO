@@ -38,25 +38,33 @@ svg{
     font-size: 100%;
 
     /* Tipografías */
-    --font-main : 'Krona One', sans-serif;
+    --font-main : 'Wix Madefor Display', sans-serif;
     --font-nav: 'Lato', sans-serif , 'Nunito Sans', sans-serif;
-    
+    --font-h1:'Wix Madefor Display', sans-serif;
     --size-nav: 10vw;
     
     /* Colores */
     --color-black : black;
     --color-white : #ECECEC;
+    --color-nav: #17425e;
+    --color-h1: #0d2433;
+    --color-hs: #17425e;
+    --bottom-color: #57577a;
 
     /* Border y befores */
     --border-height : 2px;
     --border-main   : var(--border-height) solid var(--color-black); 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*HEADER NAV*/
 .Header{
     max-width:  100%;
     min-height: 20%;
-    background-color: #74BADE;
+    background-color: white;
 }
 
 .Header-wrapper{
@@ -78,8 +86,6 @@ svg{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    
-    
 }
 
 .Nav-img{
@@ -101,19 +107,16 @@ svg{
     text-align: center;
     margin: auto;
     font-family: var(--font-nav);
-    color: var(--color-white);
+    color: var(--color-nav);
     font-size: 1.5vw;
+    transform: scale(1);
+    transition: transform 2s;
     
-}
-.Nav-li::after{
-    width: 100%;
-    color: white;
-    transform: scaleX(1)
 }
 
 .Nav-li:hover{
-    transform: scale(1.2) 
-    
+    transform: scale(1.5);
+    color: #1f333d;
     
 }
 
@@ -125,13 +128,212 @@ display: none;
 
 }
 
+/*Main*/
+
+/*Introduccion*/
+
+.Main{
+    width: 100%;
+    background-color: white;
+}
+.Main-wrapper{
+    width: 100%;
+/*    background-color: darkturquoise;*/
+}
+.Main-section{
+    width: 100%;
+/*    background-color: darkgrey;*/
+    
+    position: relative;
+}
+.Main-img{
+    width: 100%;
+/*    background-color: cornsilk;*/
+}
+.Mains-img{
+    width: 100%;
+    background-color: darksalmon;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Inicio-intro{
+    width: 80%;
+    min-height: 19.5rem;
+    background-color: white;
+    border-radius: 10px;
+    
+    position: absolute;
+    top: 20.5rem;
+    left: 6.5rem;
+}
+
+.First-p{
+    width: 70%;
+/*    background-color: aquamarine;*/
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    color: var(--color-hs);
+    padding: .8rem;
+    font-weight: 200;
+    word-spacing: .3rem;
+    
+}
+.Inicio-h1{
+    width: 80%;
+/*    background-color: blueviolet;*/
+    font-family: var(--font-h1);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-h1);
+    word-spacing: 1rem;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.Formulario-inicio{
+    display: none
+}
+
+form{
+    width: 20rem;
+    min-height: 18rem;
+    margin: 0 auto;
+    background-color: #d8e5ed;
+    padding: .5rem;
+    color: #878791;
+    font-family: var(--font-main);
+    border-radius: 0.60rem;
+    
+}
+
+.Form-input{
+    border-bottom: solid 1px #444452;
+    outline: 0;
+}
+
+.Parrafo-p , checkbox , label{
+    color: #28282e;
+}
+
+.Input-submit{
+    color: #28282e;
+    background-color: #9191a3;
+    padding: .8rem;
+    border-radius: .4rem;
+}
+
+.Formulario-inicio.IsActive{
+    display: block
+}
+
+.Formulario-button{
+    width: 20rem;
+    background-color: blanchedalmond;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--bottom-color);
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+/*seccion informativa*/
+.Grid-section{
+    margin-top: 4rem;
+/*    background-color: aquamarine;*/
+    padding: 3rem;
+    
+}
+
+.Grid-article{
+    width: 99%;
+    background-color: #ebebf2;
+    min-height: 21.875;
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 1rem;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.Mision-wrapper{
+/*    background-color: pink;*/
+    
+}
+
+.Mision-h2{
+    background-color: #ebebf2;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    border-bottom: 3px solid var(--color-nav);
+    
+}
+
+.Mision-p{
+    font-family: var(--font-main);
+    color: var(--color-nav);
+    word-spacing: .4rem;
+}
+
+.Nosotros-wrapper{
+/*    background-color: brown;*/
+}
+.Nosotros-h2{
+/*    background-color: burlywood;*/
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    border-bottom: 3px solid var(--color-nav);
+}
+
+.Nosotros-p{
+    font-family: var(--font-main);
+    color: var(--color-nav);
+}
+.Servicios-wrapper{
+/*    background-color: cornflowerblue;*/
+}
+.Servicios-h2{
+/*    background-color: darkgoldenrod;*/
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    color: var(--color-nav);
+    border-bottom: 3px solid var(--color-nav);
+}
+.Servicios-p{
+    font-family: var(--font-main);
+    color: var(--color-nav);
+}
+
+
+/*responsive*/
+
 
 @media(max-width: 780px){
-    
+    .Grid-article{
+        grid-template-columns: initial;
+    }
 }
 
 @media (max-width: 30rem){
     .Nav-li{
         display: none;
     }
+    
+    .Nav-svg{display: block;}
 }
