@@ -42,14 +42,19 @@ svg{
     --font-nav: 'Lato', sans-serif , 'Nunito Sans', sans-serif;
     --font-h1:'Wix Madefor Display', sans-serif;
     --size-nav: 10vw;
+    --font-h2: 'Wix Madefor Display', sans-serif;
+    --font-hs: 'Wix Madefor Display', sans-serif;
     
     /* Colores */
     --color-black : black;
     --color-white : #ECECEC;
     --color-nav: #17425e;
     --color-h1: #0d2433;
-    --color-hs: #17425e;
+   
+    --color-h2: #17425e;
+    --color-hs: #313c73;
     --bottom-color: #57577a;
+    --color-svg:#1f347a;
 
     /* Border y befores */
     --border-height : 2px;
@@ -162,11 +167,12 @@ display: none;
     width: 80%;
     min-height: 19.5rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     
     position: absolute;
     top: 20.5rem;
     left: 6.5rem;
+    
 }
 
 .First-p{
@@ -241,17 +247,23 @@ form{
 
 .Formulario-button{
     width: 20rem;
-    background-color: blanchedalmond;
     padding: 2rem;
     margin: auto;
-    border-radius: 15px;
+    border-radius: .9rem;
+    background: #57577a;
+    box-shadow: inset 9px -9px 12px #3e3e57,
+            inset -9px 9px 12px #70709d;
     background-color: var(--bottom-color);
     font-family: var(--font-main);
     color: var(--color-white);
     font-size: 1rem;
+    
 }
 
+
 /*seccion informativa*/
+
+
 .Grid-section{
     margin-top: 4rem;
 /*    background-color: aquamarine;*/
@@ -320,13 +332,301 @@ form{
     color: var(--color-nav);
 }
 
+/*tarifas*/
+
+.Tarifas-section{
+    max-width: 100%;
+    background-color:#c5cbdb;
+    padding: 1.2rem;
+    
+}
+.Tarifas-h2{
+    width: 70%;
+/*    background-color: pink;*/
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    
+    font-family: var(--font-h2);
+    color: var(--color-h2);
+    font-size: 2.5rem;
+    font-weight: 800;
+    word-spacing: 1rem;
+}
+.Tarifas-general{
+/*    background-color: burlywood;*/
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.Tarifa-fija{
+/*    background-color: aqua;*/
+}
+.Ahorro-svg{
+    width: 6rem;
+    fill: var(--color-svg);
+    padding: 1.2rem;
+    margin: auto
+}
+
+.General-h3{
+    font-family: var(--font-hs);
+    text-align: center;
+    color: var(--color-hs);
+    font-size: 1.5rem;
+    
+}
+
+.Tarifa-indexada{
+/*    background-color: aquamarine*/
+}
+
+.Cuota-fija{
+/*    background-color: chartreuse;*/
+}
+
+.General-p{
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--color-hs);
+    font-size: 1.1rem;
+}
+
+/*opiniones*/
+
+.Opiniones-section{
+    width: 100%;
+    position: relative;
+/*    background-color: blue;*/
+}
+.Slider-wrapper{
+    max-width: 90%;
+/*    background-color: antiquewhite;*/
+    padding: 2rem;
+    text-align: center;
+    height: 40vh;
+    margin:  auto;
+    
+    
+    
+}
+.Slider-opinion{
+    max-width: 80vw;
+/*   background-color: aquamarine;*/
+    max-height: 80vh;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s ease;
+    margin: 2rem 14rem auto;
+    border: 1px solid #c4c4c4;
+    padding: 2rem;
+    border-radius: .9rem;
+    top:0;
+    
+    
+}
+.Slider-opinion.isActive{
+    opacity: 1;
+}
+.Slider-static{
+    position: static;
+}
+
+.Nombre-h2{
+    font-family: var(--font-h2);
+    color: var(--color-h2);
+    font-size: 1.5rem;
+    
+}
+.Opinion-p{
+    font-family: var(--font-nav);
+    color: var(--color-hs);
+    font-size: 1.2rem;
+    
+}
+.Slider-arrow{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: .8em;
+
+    position: absolute;
+    top:calc( 50% - 4rem );
+}
+.Slider-next{
+    right: 5%;
+}
+.Slider-prev{
+    left: 5%;
+}
+.Slider-svg{}
+.Slider-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:4rem;
+
+    padding:1rem 0;
+}
+.Slider-li{}
+.Slider-point{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border:2px solid grey;
+    padding: .6rem;
+    
+}
+.Slider-point.isActive{
+    background-color: #313c73;
+    border-color:lightseagreen;
+}
+
+/*MAPA*/
+
+.Mapa-section{
+    max-width: 100%;
+    background-color: #232345;
+}
+
+.Mapa-info{
+    padding: 2rem;
+/*   background-color: blanchedalmond;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+
+iframe{
+    
+    border-radius: 1rem;
+}
+
+.Info-contacto{
+/*    background-color: rebeccapurple;*/
+    max-width: 50vw;
+    padding: 1rem;
+}
+
+.Info-h3{
+    font-family: var(--font-hs);
+    font-size: 3.5vh;
+    color: white;
+    padding: 1rem.5rem 0 0;
+}
+
+.Info-p{
+    font-family: var(--font-main);
+    font-size: 2.5vh;
+    color: white;
+    padding-top: .5rem;
+}
+
+
+/*footer*/
+
+.Footer{
+    max-width: 100%;
+    background-color: black;
+    padding: 2rem;
+    
+}
+
+.Consultoria-footer{
+    display:grid;
+    grid-template-columns: repeat(2 , 1fr);
+    
+}
+
+.Footer-wrapped{
+    max-width: 90%;
+/*    background-color: aquamarine;*/
+    margin: auto;
+}
+
+.Info-wrapper{
+    
+    
+}
+
+.Footer-h2{
+    max-width: 40%;
+    font-family: var(--font-h2);
+    font-size: 6vh;
+    font-weight: 900;
+    color: white;
+/*    background-color: blueviolet;*/
+    
+}
+
+
+.Info-footer{
+    color: white;
+    font-family: var(--font-nav);
+    font-size: 3.5vh;
+/*    background-color: darkcyan;*/
+    padding: 1rem;
+    
+    
+    
+}
+
+.Info-footer:hover{
+    transform: scale(1.2);
+    transition: transform 2s;
+}
 
 /*responsive*/
 
 
-@media(max-width: 780px){
-    .Grid-article{
+@media(max-width: 700px){
+    .Grid-article , .Tarifas-general{
         grid-template-columns: initial;
+    }
+    .Iinicio-intro{
+        top: 6rem;
+        left: 5rem;
+    }
+    .Iinicio-h1{
+        text-align: center;
+    }
+    
+    .Mapa-info{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    
+    iframe{
+        max-width: 50vh;
+    }
+    .Consultoria-footer{
+       grid-template-columns: auto;
+    }
+    .Footer-h2{
+        margin:1rem auto;
+        padding: 1rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: darkviolet;
+            
+        
+    }
+    .Info-footer{
+       text-align: center
     }
 }
 
@@ -336,4 +636,26 @@ form{
     }
     
     .Nav-svg{display: block;}
+    
+    .Opiniones-section{
+        position: relative;
+    }
+    
+    .Slider-wrapper{
+        max-width: 50vh;
+        max-height: 50vh;
+        display: block;
+        margin: auto;
+        left: 0;
+        position: absolute
+    }
+    
+     .Footer-h2{
+        max-width: 50vh;
+        margin: auto;
+        padding: 1rem;
+    }
+    .Info-footer{
+       text-align: center
+    }
 }
