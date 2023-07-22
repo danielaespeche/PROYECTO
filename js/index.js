@@ -13,13 +13,13 @@
 const sliderNext        =   document.querySelector('.Slider-next')
 const sliderPrev        = document.querySelector('.Slider-prev')
 const sliderOpinionList =   document.querySelectorAll('.Slider-opinion')
-const sliderPointList   =   document.querySelectorAll('.Slider-point')
+
 
  
 console.log( sliderNext )
 console.log( sliderPrev )
 console.log( sliderOpinionList )
-console.log( sliderPointList )
+
 
 let sliderActive = 0
 
@@ -33,8 +33,7 @@ sliderNext.addEventListener( 'click' , ()=>{
     sliderOpinionList.forEach(( eachOpinion , index )=>{
         sliderOpinionList[index].classList.remove('isActive')
     })
-    
-    sliderOpinionList[sliderActive].classList.add('isActive')
+     sliderOpinionList[sliderActive].classList.add('isActive')
     
     
     
@@ -42,7 +41,7 @@ sliderNext.addEventListener( 'click' , ()=>{
 
 sliderPrev.addEventListener('click' , ()=>{
     sliderActive--
-    if( sliderActive < -1){
+    if( sliderActive <= -1 ){
          sliderActive = 2
     }
        
@@ -54,25 +53,7 @@ sliderPrev.addEventListener('click' , ()=>{
     
 })
 
-sliderPointList.forEach(( each , index) => {
-    sliderPointList[index].addEventListener('click' , () => {
-        sliderActive = index
 
-        sliderPointList.forEach(( each , index) => {
-            sliderPointList[index].classList.remove('isActive')
-        })
-        
-        sliderPointList[sliderActive].classList.add('isActive')
-
-        sliderOpinionList.forEach(( each , index ) => {
-            sliderOpinionList[index].classList.remove('isActive')
-        })
-    
-        sliderOpinionList[slider].classList.add('isActive')
-    })
-
-
-})
 
 
 
