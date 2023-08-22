@@ -10,21 +10,15 @@
     
 <!--    tipografia fuentes-->
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+   
 
 </head>
 <body>
@@ -48,22 +42,22 @@
                 
                 </button>
                 
-            <div class="Header-nav">
-                <ul class="Header-ul">
-                    <li class="Header-li">
+            <nav class="Header-nav">
+                <ul class="Nav-ul">
+                    <li class="Nav-li">
                         <a href="#Mision">MISIÓN</a>
                     </li>
-                    <li class="Header-li">
+                    <li class="Nav-li">
                         <a href="#Nosotros">NOSOTROS</a>
                     </li>
-                    <li class="Header-li">
+                    <li class="Nav-li">
                         <a href="#Servicios">SERVICIOS</a>
                     </li>
                     
-                    <li class="Header-li"><a href="#Contacto">CONTACTO</a></li>
+                    <li class="Nav-li"><a href="#Contacto">CONTACTO</a></li>
                 </ul>
                 
-            </div>
+            </nav>
                
            
         </div>
@@ -85,25 +79,22 @@
                </picture>
                
                 <div id="Contacto" class="Inicio-intro">
-                    <div class="Info-Contacto">
-                        <p class="First-p">Minimizamos tu coste energético</p>
-                        <h1 class="Inicio-h1">TÚ NOS IMPORTAS</h1>
-                    </div>
-                    
-                
+                    <ul class="Info-ul">
+                        <li class="Info-li">Minimizamos tu coste energético</li>
+                        <li class="Info-li Titulo-li">TÚ NOS IMPORTAS</li>
+                    </ul>
                     
                         <!--  formulario-->
                         
-                    <button class="Formulario-button">
-                    <p class="Formulario-p">Envíanos tu solicitud y te llamamos</p>
-                    </button>
+                    <button class="Formulario-button">Envíanos tu solicitud y te llamamos</button>
                    
                     <div class="Formulario-inicio"  >
                       
-                       <form class="Form-form" action="archivo.php" method="post" enctype="multipart/form-data">
+                       <form class="Form-form" action="archivo.php" method="post">
                         
+                            
                            <p class="Parrafo-p">Nombre</p>
-                           <input type="text"  class="Form-input"  name="Nombre"   placeholder= "Nombre y apellidos" autofocus required ><br>
+                           <input type="text"  class="Form-input"  name="Nombre"   placeholder= "Nombre y apellidos" autofocus required >
                            
                            <p class="Parrafo-p">Teléfono</p>
                            <input type="number"  name="telefono" class="Form-input"  placeholder="Teléfono" required ><br>
@@ -139,7 +130,7 @@
                    <div id="Mision" class="Mision-wrapper">
                         <h2 class="Mision-h2" >Nuestra misión</h2><br>
                         
-                        <p class="Mision-p Tarifas-general" ><br>
+                        <p class="Mision-p Info-general" ><br>
                             Desde Vdenergy, nuestra principal misión, es ayudar a nuestros clientes, tanto particulares como empresas a minimizar los costes energéticos, ya sea de su uso particular o derivados de su producción dándoles un servicio cercano, profesional y personalizado.
                         </p>
                    </div>
@@ -147,7 +138,7 @@
                     <div id="Nosotros" class="Nosotros-wrapper">
                         <h2  class= "Nosotros-h2">Nosotros</h2><br>
                         
-                        <p class="Nosotros-p Tarifas-general" >
+                        <p class="Nosotros-p Info-general" >
                             Proporcionamos un gran ahorro en su factura del que se benefician múltiples clientes repartidos a lo largo de todo el territorio nacional.
                         </p>
                     </div>
@@ -155,7 +146,7 @@
                     <div id="Servicios" class="Servicios-wrapper">
                          <h2 class="Servicios-h2" >Servicios</h2><br>
                          
-                        <p class="Servicios-p Tarifas-general" >
+                        <p class="Servicios-p Info-general" >
                           Estudiamos tu consumo y factura para poder ofrecerte la mejor tarifa que se adapte a tus necesidades entre todas las comercializadoras con las que colaboramos. Sin coste alguno.
                         </p>
                     </div>
@@ -237,10 +228,10 @@
                     </div>
                     
                     <button class="Slider-arrow Slider-next">
-                    <svg class="Slider-svg"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                </button>
+                        <svg class="Slider-svg"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
 
                     <button class="Slider-arrow Slider-prev">
                         <svg class="Slider-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
@@ -289,27 +280,27 @@
         <div class="Footer-wrapped">
             <div class="Consultoria-footer">
                 <h2 class="Footer-h2">VDENERGY</h2>
-                
-                    <div class="Info-wrapper">
-                         <div class="Info-footer">
+                <ul class="Footer-ul">
+                    
+                    <li class="Footer-li">
 
-                            <a href="https://vdenergy.es/politica-de-privacidad/" title="Política de privacidad"  target="_blank" class="Privacidad-a">Política de privacidad</a>
+                        <a href="https://vdenergy.es/politica-de-privacidad/" title="Política de privacidad"  target="_blank" class="Privacidad-a">Política de privacidad</a>
 
-                         </div>
-                         <br>
+                    </li>
+                         
 
-                        <div class="Info-footer">
+                    <li class="Footer-li">
 
-                            <a href="https://vdenergy.es/politica-de-cookies/" title="Política de cookies"  target="_blank" class="Shop-a">Política de cookies</a>
+                        <a href="https://vdenergy.es/politica-de-cookies/" title="Política de cookies"  target="_blank" class="Shop-a">Política de cookies</a>
 
-                        </div>
-                        <br>
-
-                        <div class="Info-footer">
-                            <a href="https://vdenergy.es/aviso-legal/" class="Shipping-a" target="_blank">Aviso legal</a>
-                        </div>
+                    </li>
                         
-                    </div>
+
+                    <li class="Footer-li">
+                            <a href="https://vdenergy.es/aviso-legal/" class="Shipping-a" target="_blank">Aviso legal</a>
+                    </li>
+                        
+                </ul>
                
             </div>
         </div>

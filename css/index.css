@@ -1,3 +1,4 @@
+       /* reset */
 *{
     margin:0;
     padding:0;
@@ -5,7 +6,8 @@
     box-sizing: border-box;
 }
 
-li{ list-style: none; }
+li{ 
+    list-style: none; }
 
 h1 , h2 , h3 , h4 , h5 , h6 , strong{
     font-size: inherit;
@@ -68,10 +70,11 @@ html{
 
 
 
-/*HEADER NAV*/
+                /*. HEADER . */
 .Header{
     width:  100%;
     background-color: white;
+    
     
 }
 
@@ -86,14 +89,17 @@ html{
     margin: auto;
     padding: 1.9rem;
     
+    
 }
 
 
 .Header-h1{
-    width: 27vw;
+    width: 25vw;
 /*    background-color: blue;*/
     padding: 1rem;
 }
+
+/* Nav */
 
 .Header-nav{
     
@@ -101,7 +107,7 @@ html{
    
 }
 
-.Header-ul{
+.Nav-ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -110,7 +116,7 @@ html{
     
 }
 
-.Header-li{
+.Nav-li{
     font-family: var(--font-nav);
     color: var(--color-nav);
     font-size: var(--size-nav);
@@ -119,7 +125,7 @@ html{
     
 }
 
-.Header-li:hover{
+.Nav-li:hover{
     transform: scale(1.3);
     color: #1f333d;
     transition: 2s;
@@ -127,7 +133,6 @@ html{
 }
 .Header-button{
     width: 2rem;
-    
     display: none;
 }
 
@@ -137,9 +142,9 @@ html{
 
 
 
-/*Main*/
+            /*.   Main.    */
 
-/*Introduccion*/
+
 
 .Main{
     width: 100%;
@@ -155,33 +160,15 @@ html{
     
     position: relative;
 }
-/*
-.Main-img{
-    width: 100%;
-    background-color: cornsilk;
-}
-*/
 
-/*
-
-.Inicio-intro{
-    max-width: 80vw;
-    min-height: 40vh;
-    background-color: white;
-    border-radius: 15px;
-    
-    position: absolute;
-    top: 20.5rem;
-    left: 6.5rem;
-    text-align: center
-    
-}
-*/
 
 .Main-img {
     width: 100%;
     /* background-color: cornsilk; */
 }
+
+
+/* Inicio-intro */
 
 .Inicio-intro {
     max-width: 80vw;
@@ -194,15 +181,15 @@ html{
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-align: center;
-    padding: 1rem; 
+    padding: 2rem; 
 }
 
-.Info-Contacto{
+.Info-ul{
     
     /* background-color: blueviolet; */
 }
 
-.First-p {
+.Info-li{
     width: 70vw;
     /* background-color: aquamarine; */
     font-family: var(--font-main);
@@ -214,8 +201,8 @@ html{
     margin: auto;
 }
 
-.Inicio-h1 {
-    width: 80vw;
+.Titulo-li{
+    max-width: 80vw;
     /* background-color: blueviolet; */
     font-family: var(--font-h1);
     font-size: 5vw;
@@ -226,6 +213,7 @@ html{
     padding: 1rem;
 }
 
+/* Formulario */
 
 .Formulario-inicio{
 /*    display: none;*/
@@ -254,6 +242,8 @@ html{
     height: 5vh;
     border-bottom: solid 1px #444452;
     outline: 0;
+
+   
 /*    background-color: blueviolet;*/
 }
 
@@ -263,6 +253,7 @@ html{
 /*    background-color: burlywood;*/
     text-align: start;
     font-size: 3vh;
+    
 }
 label , checkbox{
 /*    background-color: brown;*/
@@ -311,11 +302,12 @@ label , checkbox{
     background-color: var(--bottom-color);
     font-family: var(--font-main);
     color: var(--color-white);
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 2vw;
     
 }
 .Formulario-p{
-    font-size: 2vw;
+    
 /*    background-color: aqua;*/
 }
 
@@ -479,15 +471,15 @@ label , checkbox{
 .Slider-opinion{
 
     width: 50vw;
-   /* background-color: palevioletred; */
-    height: 40vh;
+   background-color: palevioletred;
+    min-height: 30vh;
     position: absolute;
     opacity: 0;
    
     border: 1px solid #c4c4c4;
     padding: 2rem;
     border-radius: .9rem;
-    top: 5vw;
+    top: 6vw;
     left: 25vw;
     
 
@@ -498,12 +490,7 @@ label , checkbox{
     opacity: 1;
 }
 
-/*
-.Slider-static{
-    position: static;
-    
-}
-*/
+
 
 .Nombre-h2{
     font-family: var(--font-h2);
@@ -531,9 +518,11 @@ label , checkbox{
     top:calc( 50% - 4rem );
 }
 .Slider-next{
+    width: 8vw;
     right: 5%;
 }
 .Slider-prev{
+    width: 8vw;
     left: 5%;
 }
 
@@ -592,58 +581,64 @@ iframe{
     padding: 2rem;
     
 }
-
+.Footer-wrapped{
+    width: 90%;
+    /* background-color: aquamarine; */
+    margin: auto;
+    
+}
 .Consultoria-footer{
     display:grid;
     grid-template-columns: repeat(2 , 1fr);
-    
-}
-
-.Footer-wrapped{
-    max-width: 90%;
-/*    background-color: aquamarine;*/
-    margin: auto;
-}
-
-.Info-wrapper{
-    
-    
 }
 
 .Footer-h2{
-    max-width: 40%;
+    
     font-family: var(--font-h2);
     font-size: 6vh;
     font-weight: 900;
     color: white;
-/*    background-color: blueviolet;*/
+   /* background-color: blueviolet; */
+   margin: auto;
+    
+}
+
+.Footer-ul{
+    
+    /* background-color: brown; */
     
 }
 
 
-.Info-footer{
+
+.Footer-li{
     color: white;
     font-family: var(--font-nav);
     font-size: 3.5vh;
-/*    background-color: darkcyan;*/
+   /* background-color: darkcyan; */
     padding: 1rem;
-    
     
     
 }
 
-.Info-footer:hover{
+
+
+.Footer-li:hover{
     transform: scale(1.2);
     transition: transform 2s;
 }
 
-/*responsive*/
+/*.    responsive       */
 
 /*    modo tablet*/
 
 @media(max-width: 768px){
    
-    
+             /* header */
+    .Header-h1{
+        width: 30vw;
+    }
+
     .Header-button{
         display: block;
     }
@@ -659,11 +654,12 @@ iframe{
        
     }
      .Header-nav.isActive{
+        margin: auto;
         
-         height: 80vh;
+        height: 40vh;
         
     }
-    .Header-ul{
+    .Nav-ul{
         flex-direction: column;
         padding: 1rem;
     }
@@ -673,19 +669,31 @@ iframe{
     }
     
     
-    
+               /* Main */
     
    .Inicio-intro {
         width: 90vw; 
-        height: 28vh; 
-        padding: 1rem; 
+        min-height: 28vh; 
         top: 50%; 
         left: 50%; 
         transform: translate(-50%, -50%); 
     }
+
+    .Info-ul{
+        max-width: 90vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .Info-li{
+        width: 100%;
+    }
     .Formulario-button{
         width: 40vw;
     }
+
     .Grid-article , .Tarifas-general{
         grid-template-columns: initial;
     }
@@ -715,26 +723,43 @@ iframe{
             
         
     }
-    .Info-footer{
+    .Footer-ul{
        text-align: center
     }
 }
 
-/*modo movil*/
+            /*modo movil*/
 
 @media (max-width: 480px){
     
+            /* Header */
+            
+    .Header-h1{
+        width: 30vw;
+    }
+   .Main-img{
+    /* min-height: 35vh; */
+   }
     .Inicio-intro {
-        width: 60vw; 
-        height: 1vh; 
-        padding: .1rem; 
+        width: 80vw; 
+        min-height: 5vh; 
+        
+        
     }
 
-    .First-p {
-        width: 50vw;
-        font-size: 2vw;
-        margin: auto;
+    .Info-ul{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
     }
+    .Info-li{
+        width: 70vw;
+    }
+
+    
 
     .Inicio-h1 {
         width: 50vw;
@@ -748,6 +773,7 @@ iframe{
         height: 8vh;
         padding: 0;
     }
+    .Form-form{}
     .Opiniones-section{
         position: relative;
     }
@@ -768,13 +794,16 @@ iframe{
         width: 10vw;
     }
     
-     .Footer-h2{
-        max-width: 50vh;
+    .Footer-ul{
+        font-size: 4vw;
+       text-align: center;
+       display: grid;
+    }
+    
+    .Footer-h2{
+        width: 50vh;
         margin: auto;
         padding: 1rem;
     }
-    .Info-footer{
-        font-size: 4vw;
-       text-align: center;
-    }
+    
 }
