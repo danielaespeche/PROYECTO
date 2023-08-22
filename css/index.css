@@ -41,11 +41,12 @@ svg{
 
     /* Tipografías */
     --font-main : 'Wix Madefor Display', sans-serif;
-    --font-nav: 'Lato', sans-serif , 'Nunito Sans', sans-serif;
+    --font-nav: 'Lato', sans-serif;
     --font-h1:'Wix Madefor Display', sans-serif;
     --size-nav: 1.8vw;
     --font-h2: 'Wix Madefor Display', sans-serif;
     --font-hs: 'Wix Madefor Display', sans-serif;
+    
     
     /* Colores */
     --color-black : black;
@@ -112,17 +113,14 @@ html{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    grid-gap: 4rem;
+    gap: 4rem;
     
 }
 
 .Nav-li{
     font-family: var(--font-nav);
     color: var(--color-nav);
-    font-size: var(--size-nav);
-    
-    
-    
+    font-size: var(--size-nav); 
 }
 
 .Nav-li:hover{
