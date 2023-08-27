@@ -75,41 +75,52 @@
                         <img src="assets/oficina.jpg" alt="oficina" loading="lazy" class="Main-img">
                    
                </picture>
+
+               <div class="Fondo-primero">
+                    <div class="Fondo-primer"></div>
+                </div> 
                
                 <div id="Contacto" class="Inicio-intro">
                     <ul class="Info-ul">
                         <li class="Info-li">Minimizamos tu coste energético</li>
                         <li class="Info-li Titulo-li">TÚ NOS IMPORTAS</li>
                     </ul>
+                    <div class="Fondo-segundo">
+                        <div class="Fondo-seg"></div>
+                    </div>
+                    
                     
                         <!--  formulario-->
                         
                     <button class="Formulario-button">Envíanos tu solicitud y te llamamos</button>
-                   
-                    <div class="Formulario-inicio"  >
+
+                  
+
+                    <div class="Formulario-inicio">
                       
                        <form class="Form-form" action="archivo.php" method="post">
                         
+
+                           
+                            <h3 class="Parrafo-h3">Contáctanos</h3>
+                                
+                            <input type="text"  class="Form-input"  name="Nombre"   placeholder= "Nombre y apellidos" autofocus required >
                             
-                           <p class="Parrafo-p">Nombre</p>
-                           <input type="text"  class="Form-input"  name="Nombre"   placeholder= "Nombre y apellidos" autofocus required >
-                           
-                           <p class="Parrafo-p">Teléfono</p>
-                           <input type="number"  name="telefono" class="Form-input"  placeholder="Teléfono" required ><br>
-                           
-                           <p class="Parrafo-p">Email</p>
-                           <input type="email"  name="email" placeholder="Email" required class="Form-input"  >
-                           <br>
-                           <br>
-                           
-                           
-                           
-                           <label for="acepto">Acepto términos y condiciones</label>
-                           <input type="checkbox" name="acepto" id="acepto" >
-                           <br>
-                           <br>
-                           
-                           <input type="submit" value="Enviar" class="Input-submit">
+                            
+                            <input type="number"  name="telefono" class="Form-input"  placeholder="Teléfono" required >
+                                
+                                
+                            <input type="email"  name="email" placeholder="Email" required class="Form-input" >
+                            
+                            
+                            <div class="Check-acepto">
+                                    <input type="checkbox" name="acepto" class="Checkbox" id="acepto" >
+                                    <label class="Acepto" for="acepto">Acepto términos y condiciones</label>
+                                
+                            </div>
+
+                            <input type="submit" value="Enviar" class="Input-submit">
+
                        </form>
                        
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="Close-svg " viewBox="0 0 16 16">
@@ -118,8 +129,12 @@
                         
                     </div>
                     
+                    
                    
-                </div>    
+                </div>  
+
+                
+
             </section>
             
     <!--            seccion infomativa-->    
@@ -207,7 +222,7 @@
                    
                     <div class="Slider-opinion Slider-static">
                         <h2 class="Nombre-h2">Ester Peraza</h2>
-                        <br>
+                        
                         
                         <p class="Opinion-p">"A pesar de que era reacio al principio, me convencieron con su cercanía y precios competitivos, y ahora recomiendo a todos esta compañía."</p>
                     </div>
@@ -215,13 +230,13 @@
                     
                     <div class="Slider-opinion " >
                         <h2 class="Nombre-h2">Mauricio Corzo</h2>
-                        <br>
+                        
                         <p class="Opinion-p">"Esta compañía está siempre dispuesta a ayudar y resolver cualquier duda, con precios competitivos y un trato amable y eficiente."</p>
                     </div>
                     
                     <div class="Slider-opinion isActive">
                         <h2 class="Nombre-h2">Jesika lorena taborda alvarez</h2>
-                        <br>
+                        
                         <p class="Opinion-p">"Gente seria, llevan 4 años cambiándome de compañía y siempre me fue bien..  y un año que me penalizó una compañía me lo pagaron..lo recomiendo ya que siempre están para cualquier duda y problema. Gracias"</p>
                     </div>
                     

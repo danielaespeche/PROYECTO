@@ -168,6 +168,25 @@ html{
 
 /* Inicio-intro */
 
+.Fondo-primero{
+    
+   
+   
+}
+.Fondo-primer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Fondo-primer.isActive{
+    display: block;
+}
 .Inicio-intro {
     max-width: 80vw;
     min-height: 40vh;
@@ -181,6 +200,7 @@ html{
     text-align: center;
     padding: 2rem; 
 }
+
 
 .Info-ul{
     
@@ -211,77 +231,135 @@ html{
     padding: 1rem;
 }
 
-/* Formulario */
-
-.Formulario-inicio{
-/*    display: none;*/
-    position: relative;
+.Fondo-segundo{
+    
+    
    
 }
+.Fondo-seg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Fondo-seg.isActive{
+    display: block;
+}
+
+/* Formulario */
+
+
+.Formulario-inicio{
+   /* display: none; */
+
+    position: relative;
+   
+    
+}
+
+
 
 .Form-form{
-    width: 50vw;
-    height: 60vh;
-    margin: -20rem  auto;
-    background-color: #d8e5ed;
+    width: 40vw;
+    height: 35rem;
+    margin: -30rem  auto;
+    background-color: #263342;
     padding: 2rem 4em;
     color: #878791;
     font-family: var(--font-main);
-    border-radius: 0.60rem;
+    border-radius: 0.80rem;
     position: absolute;
-    
-    left: 20vw;
-    
+    left: 20%;
     
 }
 
-.Form-input , placeholder{
-    width: 15vw;
+.Form-input{
+    width: 25vw;
     height: 5vh;
-    border-bottom: solid 1px #444452;
     outline: 0;
-
-   
-/*    background-color: blueviolet;*/
-}
-
-.Parrafo-p{
-    width: 30%;
-    color: #28282e;
-/*    background-color: burlywood;*/
-    text-align: start;
-    font-size: 3vh;
+    background-color: rgb(247, 247, 247);
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #17425e;
     
 }
-label , checkbox{
-/*    background-color: brown;*/
+.Form-input::placeholder{
+    color: #1E1C65;
+    font-size: .9vw;
+}
+label{
+    
+}
+
+.Parrafo-h3{
+    width: 25vw;
+    color: #ffffff;
+    border-bottom: 2px solid white;
+    /* background-color: darkorange; */
+    font-size: 2.5vw;
+    margin: auto;
+    font-family: var(--font-main);
+    margin-bottom: 2rem;
+}
+
+.Check-acepto{
+    width: 20vw;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
+    margin: 2rem auto 2rem;
+    gap: .8rem;
     
+
+
+}
+.Checkbox{
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    
+}
+.Acepto{
+    width: 15vw;
+    font-size: 1vw;
+    color: white;
     
 }
 
 .Input-submit{
-    color: #28282e;
-    background-color: #9191a3;
-    padding: .9rem;
-    border-radius: .4rem;
+    width: 70%;
+    color: #191759;
+    background-color: #BAD8FB;
+    padding: .7rem;
+    border-radius: 1rem;
+    margin: auto;
+    font-family: var(--font-nav);
+    font-size: 1vw;
 }
 
 .Formulario-inicio.isActive{
     display: block;
-    
 }
 
+
+
 .Close-svg{
-    width: 3vw;
+    width: 2vw;
     position: absolute;
-    top: -310px;
-    left: 80%;
+    top: -28.5rem;
+    left: 71.8%;
     padding: .2rem;
-    fill: var(--bottom-color);
+    fill: #B4C1E2;
+    
     
 }
 
@@ -456,10 +534,11 @@ label , checkbox{
 
 .Opiniones-section{
     width: 100%;
-    
+    height: 80vh;
     position: relative;
 /*    background-color: blue;*/
 }
+
 .Opiniones-section .Opinion-wrapper{
     width: 95%;
     height: 60vh;
@@ -473,18 +552,16 @@ label , checkbox{
 .Slider-opinion{
 
     width: 50vw;
-   background-color: palevioletred;
-    min-height: 30vh;
+   /* background-color: palevioletred; */
+    height: 35vh;
     position: absolute;
     opacity: 0;
    
     border: 1px solid #c4c4c4;
     padding: 2rem;
     border-radius: .9rem;
-    top: 6vw;
+    top: 25%;
     left: 25vw;
-    
-
     
 }
 
@@ -492,19 +569,18 @@ label , checkbox{
     opacity: 1;
 }
 
-
-
 .Nombre-h2{
     font-family: var(--font-h2);
     color: var(--color-h2);
-    font-size: 2vw;
+    font-size: 2.5vw;
+    padding: 0.5rem;
    /* background-color: cadetblue; */
     
 }
 .Opinion-p{
     font-family: var(--font-nav);
     color: var(--color-hs);
-    font-size: 2vw;
+    font-size: 1.5vw;
    /* background-color: brown; */
     
     
@@ -630,7 +706,140 @@ iframe{
     transition: transform 2s;
 }
 
-/*.    responsive       */
+        /*.    responsive       */
+
+@media(max-width: 1024px){
+    .Form-form{
+        width: 40vw;
+        min-height: 50vh;
+        height: 65vh;
+        margin: -30rem  auto;
+        background-color: #263342;
+        padding: 2rem 4em;
+        color: #878791;
+        font-family: var(--font-main);
+        border-radius: 0.80rem;
+        position: absolute;
+        top: 9rem;
+        left: 20%;
+        
+    }
+
+    .Form-input{
+        width: 25vw;
+        height: 4vh;
+        outline: 0;
+        background-color: rgb(247, 247, 247);
+        border-radius: 1rem;
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: #17425e;
+        font-size: 30%;
+    
+    }
+    .Form-input::placeholder{
+        color: #1E1C65;
+        font-size: .9vw;
+    }
+    label{
+        
+    }
+
+    .Parrafo-h3{
+        width: 25vw;
+        color: #ffffff;
+        border-bottom: 2px solid white;
+        /* background-color: darkorange; */
+        font-size: 2.5vw;
+        margin: auto;
+        font-family: var(--font-main);
+        margin-bottom: 2rem;
+    }
+
+    .Check-acepto{
+        width: 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 2rem auto 2rem;
+        gap: .8rem;
+        
+
+
+    }
+    .Checkbox{
+        width: 1.3vw;
+        height: 1.3vw;
+        border-radius: 50%;
+        
+    }
+    .Acepto{
+        width: 15vw;
+        font-size: 1vw;
+        color: white;
+        
+    }
+
+    .Input-submit{
+        width: 70%;
+        color: #191759;
+        background-color: #BAD8FB;
+        padding: .7rem;
+        border-radius: 1rem;
+        margin: auto;
+        font-family: var(--font-nav);
+        font-size: 1vw;
+    }
+
+    .Formulario-inicio.isActive{
+        display: block;
+    }
+
+
+
+    .Close-svg{
+        width: 2.5vw;
+        position: absolute;
+        top: -20.2rem;
+        left: 71.8%;
+        padding: .2rem;
+        fill: #B4C1E2;
+        
+        
+    }
+
+    .Close-svg.isActive , .Formulario-inicio{
+        display: none;
+    }
+
+    .Formulario-button{
+        width: 30vw;
+        padding: 2rem;
+        margin: auto;
+        border-radius: .9rem;
+
+        box-shadow: inset 9px -9px 12px #3e3e57,
+                inset -9px 9px 12px #70709d;
+        background-color: var(--bottom-color);
+        font-family: var(--font-main);
+        color: var(--color-white);
+        font-size: 2vw;
+        transform: scale(1);
+        transition: 1.5s ease all;
+    }
+
+    .Formulario-button:hover{
+        transform: scale(1.2);
+    }
+    .Formulario-p{
+        
+    /*    background-color: aqua;*/
+    }
+
+
+}
 
 /*    modo tablet*/
 
@@ -696,8 +905,121 @@ iframe{
         width: 40vw;
     }
 
+    /* formulario */
+
+    .Form-form{
+        width: 40vw;
+        height: 60vh;
+        min-height: 50vh;
+        margin: -30rem  auto;
+        background-color: #263342;
+        padding: 2rem 4em;
+        color: #878791;
+        font-family: var(--font-main);
+        border-radius: 0.80rem;
+        position: absolute;
+        top: 10.5rem;
+        left: 20%;
+        
+    }
+
+    .Form-input{
+        width: 25vw;
+        height: 4vh;
+        outline: 0;
+        background-color: rgb(247, 247, 247);
+        border-radius: 1rem;
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: #17425e;
+        font-size: 30%;
+    
+    }
+    .Form-input::placeholder{
+        color: #1E1C65;
+        font-size: .9vw;
+    }
+    label{
+        
+    }
+
+    .Parrafo-h3{
+        width: 25vw;
+        color: #ffffff;
+        border-bottom: 2px solid white;
+        /* background-color: darkorange; */
+        font-size: 2.5vw;
+        margin: auto;
+        font-family: var(--font-main);
+        margin-bottom: 2rem;
+    }
+
+    .Check-acepto{
+        width: 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 2rem auto 2rem;
+        gap: .8rem;
+        
+
+
+    }
+    .Checkbox{
+        width: 1.3vw;
+        height: 1.3vw;
+        border-radius: 50%;
+        
+    }
+    .Acepto{
+        width: 15vw;
+        font-size: 1vw;
+        color: white;
+        
+    }
+
+    .Input-submit{
+        width: 70%;
+        color: #191759;
+        background-color: #BAD8FB;
+        padding: .7rem;
+        border-radius: 1rem;
+        margin: auto;
+        font-family: var(--font-nav);
+        font-size: 1vw;
+    }
+
+    .Formulario-inicio.isActive{
+        display: block;
+    }
+
+
+
+    .Close-svg{
+        width: 2.5vw;
+        position: absolute;
+        top: -19rem;
+        left: 71%;
+        padding: .2rem;
+        fill: #B4C1E2;
+        
+        
+    }
+
+    .Close-svg.isActive , .Formulario-inicio{
+        display: none;
+    }
+
     .Grid-article , .Tarifas-general{
         grid-template-columns: initial;
+    }
+
+    .Slider-opinion{
+        top: 25%;
+        left: 25vw;
+        
     }
     
     .Mapa-info{
@@ -770,17 +1092,146 @@ iframe{
         word-spacing: 0;
         /* background-color: coral; */
     }
+
+        /* MAIN */
+
+    /* Formulario */
     .Formulario-button{
-        width: 40vw;
-        height: 8vh;
-        padding: 0;
+        width: 25vw;
     }
-    .Form-form{}
+
+    .Formulario-inicio{
+        /* display: none; */
+     
+        position: relative;
+        
+    }
+     
+    .Form-form{
+        width: 45vw;
+        height: 10rem;
+        min-height: 10rem;
+        margin: -30rem  auto;
+       padding: 2rem 4em;
+        top: 17rem;
+        left: 20%;
+        
+    }
+
+    .Parrafo-h3{
+        width: 100;
+        color: #ffffff;
+        border-bottom: 2px solid white;
+        /* background-color: darkorange; */
+        
+        
+        font-family: var(--font-main);
+        margin-bottom: 1.5rem;
+        margin-left: -25px;
+    }
+
+    .Form-input{
+        width: 25vw;
+        height: .7rem;
+        min-height: .7rem;
+        outline: 0;
+        background-color: rgb(247, 247, 247);
+        border-radius: 1rem;
+        margin-left: -25px;
+        padding: .6rem;
+        margin-bottom: .3rem;
+        color: #17425e;
+        font-size: 30%;
+        
+    
+    }
+    .Form-input::placeholder{
+        color: #1E1C65;
+        font-size: 1vw;
+    }
+    label{
+        width: 30vw;
+        /* background-color: lawngreen; */
+    }
+
+    
+
+    .Check-acepto{
+        width: 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 1rem auto 1rem;
+        gap: .8rem;
+        margin-left: -20px;
+
+    }
+    .Checkbox{
+        width: 1.8vw;
+        height: 1.8vw;
+        border-radius: 50%;
+        
+    }
+    .Acepto{
+        width: 19vw;
+        font-size: 1vw;
+        color: white;
+        
+    }
+
+    .Input-submit{
+        width: 15vw;
+        color: #191759;
+        background-color: #BAD8FB;
+        padding: .7rem;
+        border-radius: 1rem;
+        margin: auto;
+        font-family: var(--font-nav);
+        font-size: 1.5vw;
+    }
+
+    .Formulario-inicio.isActive{
+        display: block;
+    }
+
+
+
+    .Close-svg{
+        width: 2.5vw;
+        position: absolute;
+        top: -19rem;
+        left: 71%;
+        padding: .2rem;
+        fill: #B4C1E2;
+        
+        
+    }
+    
+   
+     
+
+    
+
+
+    
+    /* Opiniones */
+
     .Opiniones-section{
         position: relative;
     }
     .Grid-article{
         padding: 1rem;
+    }
+
+    .Tarifas-h2{
+        font-size:  7vw;
+        font-weight: 700;
+        /* background-color: coral; */
+    }
+
+    .General-p{
+        font-size: 5vw;
     }
     
     .Slider-wrapper{
@@ -792,8 +1243,22 @@ iframe{
         position: absolute;
     }
 
+    .Opiniones-section{
+        height: 40vh;
+    }
     .Slider-prev , .Slider-arrow , .Slider-next{
         width: 10vw;
+    }
+    .Slider-opinion{
+        height: 25vh;
+    }
+    .Nombre-h2{
+      font-size: 3vw;
+        
+    }
+    .Opinion-p{
+        font-size: 2.5vw;
+        
     }
     
     .Footer-ul{

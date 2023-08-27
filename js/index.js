@@ -61,28 +61,42 @@ sliderPrev.addEventListener('click' , ()=>{
 
 // Cuando  le hago un click a .Formulario-button, hace una Function
     // el .Formulario-inicio is active, aparece
+    //el .Fondo-primer is active, aparece
+    //el .Fondo-seg is active, aparece
 
 //Cuando le hago click a Close-svg, ejecuta una FUNCTION   
     //el .Formulario-inicio hace display none
+    //el .Fondo-primer is active, desaparece
+    //el .Fondo-seg is active, desaparece
 
 const formularioButton = document.querySelector('.Formulario-button')
 const formularioInicio = document.querySelector('.Formulario-inicio')
 const closeSvg         = document.querySelector('.Close-svg')
+const fondoPrimer      = document.querySelector('.Fondo-primer')
+const fondoSeg     = document.querySelector('.Fondo-seg')
 
 console.log(formularioButton)
 console.log(formularioInicio)
 console.log(closeSvg)
+console.log(fondoPrimer)
+console.log(fondoSeg)
 
 
 formularioButton.addEventListener( 'click' , function(){
     formularioInicio.classList.add('isActive')
+    fondoPrimer.classList.add('isActive')
+    fondoSeg.classList.add('isActive')
 }
 );
 
 closeSvg.addEventListener('click' , function(){
     formularioInicio.classList.remove('isActive')
+    fondoPrimer.classList.remove('isActive')
+    fondoSeg.classList.remove('isActive')
 }
 );
+
+
 
 //Slider-menu
 
