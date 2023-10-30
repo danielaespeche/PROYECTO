@@ -124,9 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (headerLink && homeHeader) {
         headerLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            event.preventDefault(); 
 
-            // Hacer scroll suave hasta la etiqueta .Mision-wrapper
+           
           homeHeader.scrollIntoView({ behavior: 'smooth' });
 
         });
@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (misionLink && misionWrapper) {
         misionLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            event.preventDefault(); 
 
-            // Hacer scroll suave hasta la etiqueta .Mision-wrapper
+            
             misionWrapper.scrollIntoView({ behavior: 'smooth' });
 
         });
@@ -159,9 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (nosotrosLink && nosotrosWrapper) {
         nosotrosLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            event.preventDefault(); 
 
-            // Hacer scroll suave hasta la etiqueta .Mision-wrapper
+
             nosotrosWrapper.scrollIntoView({ behavior: 'smooth' });
 
         });
@@ -175,9 +175,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (serviciosLink && serviciosWrapper) {
         serviciosLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            event.preventDefault(); 
 
-            // Hacer scroll suave hasta la etiqueta .Mision-wrapper
+            
             serviciosWrapper.scrollIntoView({ behavior: 'smooth' });
 
         });
@@ -192,9 +192,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactoLink && inicioIntro) {
         contactoLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            event.preventDefault(); 
 
-            // Hacer scroll suave hasta la etiqueta .Mision-wrapper
+            
           inicioIntro.scrollIntoView({ behavior: 'smooth' });
 
         });

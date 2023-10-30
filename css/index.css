@@ -95,7 +95,7 @@ html{
 
 
 .Header-h1{
-    width: 25vw;
+   width: 25%;
 /*    background-color: blue;*/
     padding: 1rem;
 }
@@ -267,7 +267,8 @@ html{
 
 .Form-form{
     width: 40vw;
-    height: 35rem;
+    min-height: 33rem;
+    max-height: 50rem;
     margin: -30rem  auto;
     background-color: #263342;
     padding: 2rem 4em;
@@ -276,6 +277,7 @@ html{
     border-radius: 0.80rem;
     position: absolute;
     left: 20%;
+    
     
 }
 
@@ -433,6 +435,7 @@ label{
     font-family: var(--font-main);
     color: var(--color-nav);
     word-spacing: .4rem;
+    margin-top: 1rem;
 }
 
 .Nosotros-wrapper{
@@ -444,11 +447,13 @@ label{
     font-size: 1.5rem;
     color: var(--color-nav);
     border-bottom: 3px solid var(--color-nav);
+    
 }
 
 .Nosotros-p{
     font-family: var(--font-main);
     color: var(--color-nav);
+    margin-top: 1rem;
 }
 .Servicios-wrapper{
 /*    background-color: cornflowerblue;*/
@@ -463,6 +468,7 @@ label{
 .Servicios-p{
     font-family: var(--font-main);
     color: var(--color-nav);
+    margin-top: 1rem;
 }
 
 /*tarifas*/
@@ -536,13 +542,13 @@ label{
     width: 100%;
     height: 80vh;
     position: relative;
-/*    background-color: blue;*/
+   /* background-color: blue; */
 }
 
 .Opiniones-section .Opinion-wrapper{
     width: 95%;
-    height: 60vh;
-   /* background-color: paleturquoise; */
+    height: 100%;
+   /* background-color: rgb(131, 248, 248); */
     
     text-align: center;
     margin: auto;
@@ -553,15 +559,16 @@ label{
 
     width: 50vw;
    /* background-color: palevioletred; */
-    height: 35vh;
+    /* height: 35vh; */
     position: absolute;
     opacity: 0;
    
     border: 1px solid #c4c4c4;
     padding: 2rem;
     border-radius: .9rem;
-    top: 25%;
+    top: 30%;
     left: 25vw;
+    font-size: 150%;
     
 }
 
@@ -572,7 +579,7 @@ label{
 .Nombre-h2{
     font-family: var(--font-h2);
     color: var(--color-h2);
-    font-size: 2.5vw;
+    
     padding: 0.5rem;
    /* background-color: cadetblue; */
     
@@ -580,7 +587,7 @@ label{
 .Opinion-p{
     font-family: var(--font-nav);
     color: var(--color-hs);
-    font-size: 1.5vw;
+    font-size: 90%;
    /* background-color: brown; */
     
     
@@ -710,18 +717,8 @@ iframe{
 
 @media(max-width: 1024px){
     .Form-form{
-        width: 40vw;
-        min-height: 50vh;
-        height: 65vh;
-        margin: -30rem  auto;
-        background-color: #263342;
-        padding: 2rem 4em;
-        color: #878791;
-        font-family: var(--font-main);
-        border-radius: 0.80rem;
-        position: absolute;
-        top: 9rem;
-        left: 20%;
+        top: 14.5rem;
+        min-height: 26.5rem;
         
     }
 
@@ -802,8 +799,8 @@ iframe{
     .Close-svg{
         width: 2.5vw;
         position: absolute;
-        top: -20.2rem;
-        left: 71.8%;
+        top: -14.2rem;
+        left: 26rem;
         padding: .2rem;
         fill: #B4C1E2;
         
@@ -884,7 +881,8 @@ iframe{
     
    .Inicio-intro {
         width: 90vw; 
-        min-height: 28vh; 
+        height: 40vh;
+        min-height: 30vh; 
         top: 50%; 
         left: 50%; 
         transform: translate(-50%, -50%); 
@@ -909,8 +907,8 @@ iframe{
 
     .Form-form{
         width: 40vw;
-        height: 60vh;
-        min-height: 50vh;
+        height: 44vh;
+        min-height: 44vh;
         margin: -30rem  auto;
         background-color: #263342;
         padding: 2rem 4em;
@@ -918,7 +916,7 @@ iframe{
         font-family: var(--font-main);
         border-radius: 0.80rem;
         position: absolute;
-        top: 10.5rem;
+        top: 12rem;
         left: 20%;
         
     }
@@ -1000,7 +998,7 @@ iframe{
     .Close-svg{
         width: 2.5vw;
         position: absolute;
-        top: -19rem;
+        top: -17rem;
         left: 71%;
         padding: .2rem;
         fill: #B4C1E2;
@@ -1059,14 +1057,14 @@ iframe{
             /* Header */
             
     .Header-h1{
-        width: 30vw;
+        width: 11rem;
     }
-   .Main-img{
-    /* min-height: 35vh; */
-   }
-    .Inicio-intro {
+  
+    .Inicio-intro{
         width: 80vw; 
-        min-height: 5vh; 
+        height: 25vh; 
+        min-height: 25vh;
+        padding: 1rem;
         
         
     }
@@ -1097,7 +1095,8 @@ iframe{
 
     /* Formulario */
     .Formulario-button{
-        width: 25vw;
+        width: 30vw;
+        padding: 1rem;
     }
 
     .Formulario-inicio{
@@ -1108,18 +1107,18 @@ iframe{
     }
      
     .Form-form{
-        width: 45vw;
-        height: 10rem;
-        min-height: 10rem;
+        width: 43vw;
+        height: 14.5rem;
+        min-height: 14.5rem;
         margin: -30rem  auto;
        padding: 2rem 4em;
-        top: 17rem;
+        top: 18rem;
         left: 20%;
         
     }
 
     .Parrafo-h3{
-        width: 100;
+    
         color: #ffffff;
         border-bottom: 2px solid white;
         /* background-color: darkorange; */
@@ -1198,23 +1197,33 @@ iframe{
 
 
     .Close-svg{
-        width: 2.5vw;
+        width: 3vw;
         position: absolute;
-        top: -19rem;
-        left: 71%;
+        top: -10.9rem;
+        left: 73%;
         padding: .2rem;
         fill: #B4C1E2;
         
         
     }
-    
-   
-     
-
-    
 
 
+    /* Tarifas */
     
+    .Mision-p{
+        margin-top: 1rem;
+    }
+
+    
+    .Nosotros-p{
+        margin-top: 1rem;
+    }
+  
+    .Servicios-p{
+        margin-top: 1rem;
+    }
+    
+
     /* Opiniones */
 
     .Opiniones-section{
@@ -1243,24 +1252,50 @@ iframe{
         position: absolute;
     }
 
+    
+
     .Opiniones-section{
         height: 40vh;
+        /* background-color: chocolate; */
     }
     .Slider-prev , .Slider-arrow , .Slider-next{
         width: 10vw;
     }
     .Slider-opinion{
-        height: 25vh;
+        
     }
     .Nombre-h2{
-      font-size: 3vw;
+      font-size: 3.4vw;
         
     }
     .Opinion-p{
-        font-size: 2.5vw;
+        font-size: 3vw;
         
     }
+
     
+    .Slider-arrow{
+        width: 5rem;
+        height: 5rem;
+        background-color: white;
+        border-radius: 50%;
+        padding: .8em;
+    
+        position: absolute;
+        top:35%;
+    }
+    .Slider-next{
+        width: 8vw;
+        right: 5%;
+    }
+    .Slider-prev{
+        width: 8vw;
+        left: 5%;
+    }
+    
+    
+            /* Footer */
+
     .Footer-ul{
         font-size: 4vw;
        text-align: center;
@@ -1268,9 +1303,8 @@ iframe{
     }
     
     .Footer-h2{
-        width: 50vh;
         margin: auto;
-        padding: 1rem;
+        
     }
     
 }
